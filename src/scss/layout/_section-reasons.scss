@@ -1,4 +1,5 @@
 .reasons{
+    position: relative;
     height: 624px;
     background-color: #eff9ff;
     display: flex;
@@ -45,5 +46,16 @@
             font-weight: 500;
             font-size: 20px;
         }
+    }
+    &__arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        background-color: $font-color;
+        border-radius: 22.5px;
+        position: absolute;
+        transform: translateY(601.5px);
     }
 }
