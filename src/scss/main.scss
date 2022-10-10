@@ -77,14 +77,25 @@ html {
     height: 376px;
     &__h2{
         font-family: $font-main;
-        color: $font-title-color;
+        color: #8ccbea;
         font-size: 1.4rem;
-        margin: 37px 217px 15px 0;
+        margin: 37px 217px 0 15px;
     }
     &__h3{
+        height: 60px;
+        margin-top: 6px;
         font-family: $font-title;
-        font-size: 24px;
+        font-size: 2.4rem;
         margin-left: 15px;
+    }
+    &__p{
+        height: 120px;
+        margin: 20px 15px 0 15px;
+        color: #4a4a4a;
+        font-size: 1.8rem;
+        font-family: $font-main;
+        line-height: 3rem;
+
     }
 }
 
