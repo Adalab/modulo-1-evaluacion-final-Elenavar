@@ -1,0 +1,61 @@
+@import 'core/variables';
+// @import 'core/reset';
+// @import 'components/code';
+// @import 'components/links';
+// @import 'layout/page';
+// @import 'layout/header';
+// @import 'layout/footer';
+@import 'pages/index';
+
+html {
+    font-size: 62.5%;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    position: absolute;
+}
+
+.hero{
+    height: 543.1px;
+    background-image: url("../images/cover.jpeg");
+    background-origin: content-box;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &__h1{
+        text-align: center;
+        height: 59.1px;
+        margin: 0 1.4px 60.9px 3px;
+        font-family: $font-title;
+        font-size: 4.2rem;
+        line-height: 5.5rem;
+        text-transform: uppercase;
+        color: $font-color;
+        &::first-line{
+            word-spacing: 100vw;
+        }
+    }
+    &__p{
+        text-align: center;
+        font-family: $font-main;
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        color: $font-color;
+        margin: 0 42.8px 106.3px 33.9px;
+    }
+    &__icon{
+        height: 37px;
+        width: 37.9px;
+        background-color: $font-color;
+        border-radius: 50%;
+    }
+}
+
