@@ -1,116 +1,15 @@
 @import 'core/variables';
-// @import 'core/reset';
+@import 'core/reset';
 // @import 'components/code';
 // @import 'components/links';
-// @import 'layout/page';
-// @import 'layout/header';
-// @import 'layout/footer';
-@import 'pages/index';
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/section-tips';
+@import 'layout/section-reasons';
+@import 'layout/footer';
+// @import 'pages/index';
 
 html {
     font-size: 62.5%;
   }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.header{
-    position: absolute;
-}
-
-.hero{
-    height: 543.1px;
-    background-image: url("../images/cover.jpeg");
-    background-origin: content-box;
-    background-size: cover;
-    background-position: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    &__h1{
-        text-align: center;
-        height: 59.1px;
-        margin: 0 1.4px 60.9px 3px;
-        font-family: $font-title;
-        font-size: 4.2rem;
-        line-height: 5.5rem;
-        text-transform: uppercase;
-        color: $font-color;
-        &::first-line{
-            word-spacing: 100vw;
-        }
-    }
-    &__p{
-        text-align: center;
-        font-family: $font-main;
-        font-size: 1.6rem;
-        text-transform: capitalize;
-        color: $font-color;
-        margin: 0 42.8px 35.2px 33.9px;
-    }
-    &__container{
-        height: 37px;
-        width: 37.9px;
-        margin: 0 145px 34.1px 137.1px;
-        background-color: $font-color;
-        border-radius: 22.5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &--icon{
-            height: 9.6px;
-            width: 16.8px;
-        }
-    }
-}
-
-.tips{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 24.9px;
-    height: 376px;
-    &__h2{
-        font-family: $font-main;
-        color: #8ccbea;
-        font-size: 1.4rem;
-        margin: 37px 0 0 15px;
-    }
-    &__h3{
-        height: 60px;
-        margin-top: 6px;
-        font-family: $font-title;
-        font-size: 2.4rem;
-        margin-left: 15px;
-    }
-    &__p{
-        height: 120px;
-        margin: 20px 15px 0 15px;
-        color: #4a4a4a;
-        font-size: 1.8rem;
-        font-family: $font-main;
-        line-height: 3rem;
-    }
-    &__button{
-        height: 45px;
-        width: 76px;
-        margin: 26px 0 0 15px;
-        border: 2px solid $button-color;
-        border-radius:  22.5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &--p{
-            color: $button-color;
-            font-family: $font-main;
-            font-size: 2rem;
-            font-weight: 500;
-        }
-    }
-}
 

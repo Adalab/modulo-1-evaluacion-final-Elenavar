@@ -1,20 +1,13 @@
-.main__list {
-  padding-left: 2rem;
-  padding-bottom: 20px; }
-
-html {
-  font-size: 62.5%; }
-
 * {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
 .header {
   position: absolute; }
 
 .hero {
-  height: 543.1px;
+  height: 100vh;
   background-image: url("../images/cover.jpeg");
   background-origin: content-box;
   background-size: cover;
@@ -66,6 +59,7 @@ html {
     font-size: 1.4rem;
     margin: 37px 0 0 15px; }
   .tips__h3 {
+    width: 290px;
     height: 60px;
     margin-top: 6px;
     font-family: "Roboto Slab", serif;
@@ -92,5 +86,56 @@ html {
       font-family: "Roboto", sans-serif;
       font-size: 2rem;
       font-weight: 500; }
+
+.reasons {
+  height: 624px;
+  background-color: #eff9ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .reasons__h3 {
+    font-family: "Roboto Slab", serif;
+    font-size: 2.4rem;
+    text-align: center;
+    padding-top: 29px;
+    margin-bottom: 49px; }
+  .reasons__article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 63px;
+    margin-bottom: 44px;
+    justify-items: center; }
+    .reasons__article--h4 {
+      grid-row-start: 1/2;
+      font-family: "Roboto Slab", serif;
+      font-size: 1.8rem;
+      text-align: center; }
+    .reasons__article--p {
+      width: 180px;
+      grid-row-start: 2/3;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.8rem;
+      text-align: center; }
+  .reasons__button {
+    width: 184px;
+    height: 45px;
+    background-color: #f26002;
+    border-radius: 22.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .reasons__button--p {
+      color: #ffff;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: 20px; }
+
+.footer {
+  height: 465px;
+  background-color: #304268;
+  color: #ffff; }
+
+html {
+  font-size: 62.5%; }
 
 /*# sourceMappingURL=main.css.map */
