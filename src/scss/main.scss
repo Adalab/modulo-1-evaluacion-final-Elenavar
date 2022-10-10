@@ -51,11 +51,18 @@ html {
         color: $font-color;
         margin: 0 42.8px 106.3px 33.9px;
     }
-    &__icon{
+    &__container{
         height: 37px;
         width: 37.9px;
         background-color: $font-color;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--icon{
+            height: 9.6px;
+            width: 16.8px;
+        }
     }
 }
 

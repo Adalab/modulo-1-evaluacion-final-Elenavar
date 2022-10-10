@@ -40,10 +40,16 @@ html {
     text-transform: capitalize;
     color: #ffff;
     margin: 0 42.8px 106.3px 33.9px; }
-  .hero__icon {
+  .hero__container {
     height: 37px;
     width: 37.9px;
     background-color: #ffff;
-    border-radius: 50%; }
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .hero__container--icon {
+      height: 9.6px;
+      width: 16.8px; }
 
 /*# sourceMappingURL=main.css.map */
