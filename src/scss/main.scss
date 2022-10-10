@@ -29,6 +29,7 @@ html {
     background-position: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: flex-end;
     &__h1{
         text-align: center;
@@ -49,20 +50,41 @@ html {
         font-size: 1.6rem;
         text-transform: capitalize;
         color: $font-color;
-        margin: 0 42.8px 106.3px 33.9px;
+        margin: 0 42.8px 35.2px 33.9px;
     }
     &__container{
         height: 37px;
         width: 37.9px;
+        margin: 0 145px 34.1px 137.1px;
         background-color: $font-color;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
+
         &--icon{
             height: 9.6px;
             width: 16.8px;
         }
+    }
+}
+
+.tips{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24.9px;
+    height: 376px;
+    &__h2{
+        font-family: $font-main;
+        color: $font-title-color;
+        font-size: 1.4rem;
+        margin: 37px 217px 15px 0;
+    }
+    &__h3{
+        font-family: $font-title;
+        font-size: 24px;
+        margin-left: 15px;
     }
 }
 
