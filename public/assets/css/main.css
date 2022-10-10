@@ -46,7 +46,7 @@ html {
     width: 37.9px;
     margin: 0 145px 34.1px 137.1px;
     background-color: #ffff;
-    border-radius: 50%;
+    border-radius: 22.5px;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -64,7 +64,7 @@ html {
     font-family: "Roboto", sans-serif;
     color: #8ccbea;
     font-size: 1.4rem;
-    margin: 37px 217px 0 15px; }
+    margin: 37px 0 0 15px; }
   .tips__h3 {
     height: 60px;
     margin-top: 6px;
@@ -78,5 +78,19 @@ html {
     font-size: 1.8rem;
     font-family: "Roboto", sans-serif;
     line-height: 3rem; }
+  .tips__button {
+    height: 45px;
+    width: 76px;
+    margin: 26px 0 0 15px;
+    border: 2px solid #f26002;
+    border-radius: 22.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .tips__button--p {
+      color: #f26002;
+      font-family: "Roboto", sans-serif;
+      font-size: 2rem;
+      font-weight: 500; }
 
 /*# sourceMappingURL=main.css.map */

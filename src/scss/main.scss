@@ -57,7 +57,7 @@ html {
         width: 37.9px;
         margin: 0 145px 34.1px 137.1px;
         background-color: $font-color;
-        border-radius: 50%;
+        border-radius: 22.5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -79,7 +79,7 @@ html {
         font-family: $font-main;
         color: #8ccbea;
         font-size: 1.4rem;
-        margin: 37px 217px 0 15px;
+        margin: 37px 0 0 15px;
     }
     &__h3{
         height: 60px;
@@ -95,7 +95,22 @@ html {
         font-size: 1.8rem;
         font-family: $font-main;
         line-height: 3rem;
-
+    }
+    &__button{
+        height: 45px;
+        width: 76px;
+        margin: 26px 0 0 15px;
+        border: 2px solid $button-color;
+        border-radius:  22.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--p{
+            color: $button-color;
+            font-family: $font-main;
+            font-size: 2rem;
+            font-weight: 500;
+        }
     }
 }
 
