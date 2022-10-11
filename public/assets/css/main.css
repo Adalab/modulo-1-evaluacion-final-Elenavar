@@ -213,33 +213,42 @@
 .reasons {
   height: 624px;
   background-color: #eff9ff;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 108px 411px 105px;
+  justify-items: center; }
+  @media all and (min-width: 768px) {
+    .reasons {
+      height: 397px;
+      grid-template-rows: 119px 173px 105px; } }
   .reasons__h3 {
+    grid-row-start: 1/2;
     font-family: "Roboto Slab", serif;
     font-size: 2.4rem;
     text-align: center;
-    padding-top: 29px;
+    margin-top: 29px;
     margin-bottom: 49px; }
-  .reasons__article {
+  .reasons .container__article {
+    grid-row-start: 2/3;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 30px 63px;
     margin-bottom: 44px;
     justify-items: center; }
-    .reasons__article--h4 {
-      grid-row-start: 1/2;
-      font-family: "Roboto Slab", serif;
-      font-size: 1.8rem;
-      text-align: center; }
-    .reasons__article--p {
-      width: 180px;
-      grid-row-start: 2/3;
-      font-family: "Roboto", sans-serif;
-      font-size: 1.8rem;
-      text-align: center; }
+  .reasons .container--h4 {
+    grid-row-start: 1/2;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.8rem;
+    text-align: center; }
+  .reasons .container--p {
+    width: 180px;
+    grid-row-start: 2/3;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    text-align: center; }
   .reasons__button {
+    margin-bottom: 60px;
+    grid-row-start: 3/4;
     width: 184px;
     height: 45px;
     background-color: #f26002;
@@ -254,16 +263,6 @@
       font-family: "Roboto", sans-serif;
       font-weight: 500;
       font-size: 20px; }
-  .reasons__arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    background-color: #ffff;
-    border-radius: 22.5px;
-    position: absolute;
-    transform: translateY(601.5px); }
 
 .footer {
   height: 465px;
@@ -272,6 +271,16 @@
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .footer__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #ffff;
+    border-radius: 22.5px;
+    position: absolute;
+    transform: translateY(-22.5px); }
   .footer__info {
     display: flex;
     flex-direction: column;

@@ -1,51 +1,60 @@
-.footer{
-    height: 465px;
-    background-color: #304268;
-    color: $font-color; 
+.footer {
+  height: 465px;
+  background-color: #304268;
+  color: $font-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: $font-color;
+    border-radius: 22.5px;
+    position: absolute;
+    transform: translateY(-22.5px);
+  }
+  &__info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__info{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        list-style: none;
-        font-family: $font-main;
-        color: $font-color;
-        font-size: 1.6rem;
-        text-transform: uppercase;
-        line-height: 30px;
-        height: 150px;
-        margin-top: 65px;
-    
+    list-style: none;
+    font-family: $font-main;
+    color: $font-color;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    line-height: 30px;
+    height: 150px;
+    margin-top: 65px;
+  }
+  &__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    font-family: $font-main;
+    color: $font-color;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    line-height: 30px;
+    height: 90px;
+    margin-top: 30px;
+  }
+  &__copy {
+    margin-top: 32px;
+    font-family: $font-main;
+    font-size: 1.4rem;
+    line-height: 30px;
+  }
+  &__love {
+    font-family: $font-main;
+    font-size: 1.4rem;
+    line-height: 30px;
+    margin-bottom: 36px;
+    &--heart {
+      color: $button-color;
     }
-    &__social{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        list-style: none;
-        font-family: $font-main;
-        color: $font-color;
-        font-size: 1.6rem;
-        text-transform: uppercase;
-        line-height: 30px;
-        height: 90px;
-        margin-top: 30px;
-    }
-    &__copy{
-        margin-top: 32px;
-        font-family: $font-main;
-        font-size: 1.4rem;
-        line-height: 30px;
-    }
-    &__love{
-        font-family: $font-main;
-        font-size: 1.4rem;
-        line-height: 30px;
-        margin-bottom: 36px;
-        &--heart{
-            color: $button-color;
-        }
-    }
-
+  }
 }
