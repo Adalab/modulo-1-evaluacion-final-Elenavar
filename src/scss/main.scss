@@ -1,11 +1,11 @@
 @import 'core/variables';
 @import 'core/reset';
 // @import 'components/code';
-// @import 'components/links';
+@import 'components/links';
 @import 'layout/header';
 @import 'layout/hero';
-@import 'layout/section-tips';
-@import 'layout/section-reasons';
+@import 'layout/tips';
+@import 'layout/reasons';
 @import 'layout/footer';
 // @import 'pages/index';
 

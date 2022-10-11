@@ -1,9 +1,13 @@
-.link__adalab:hover {
-  background-color: #099d8d;
-  color: #fff;
+.link{
+  text-decoration: none;
 }
 
-.link__github:hover {
-  background-color: #CCC;
-  color: #000;
+.footer{
+  .link{
+  color: $font-color;
+    &:hover{
+      color:$button-color;
+    }
+  }
 }
+

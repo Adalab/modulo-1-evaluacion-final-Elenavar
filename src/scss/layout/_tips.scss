@@ -35,6 +35,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        &:hover{
+            background-color: #8ccbea;
+        }
         &--p{
             color: $button-color;
             font-family: $font-main;
