@@ -128,10 +128,12 @@
   height: 376px; }
   @media all and (min-width: 768px) {
     .tips {
-      height: 330px; } }
+      height: 330px;
+      align-items: flex-start; } }
   @media all and (min-width: 1280px) {
     .tips {
-      height: 360px; } }
+      height: 360px;
+      align-items: flex-start; } }
   .tips__h2 {
     font-family: "Roboto", sans-serif;
     color: #8ccbea;
