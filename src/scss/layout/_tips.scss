@@ -1,7 +1,7 @@
 .tips{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 24.9px;
     height: 376px;
     @media all and (min-width: 768px){
@@ -15,13 +15,16 @@
         color: #8ccbea;
         line-height: 3rem;
         font-size: 1.4rem;
-        margin: 37px 0 0 15px;
+        margin: 37px 216.69px 0 15px;
         @media all and (min-width: 768px){
-            margin-left: 39px;
+            width: 216px;
+            margin: 37px 513px 0 39px;
         }
         @media all and (min-width: 1280px){
+            width: 360px;
+            height: 26px;
             font-size: 1.6rem;
-            margin-left: 275px;
+            margin: 65px 645px 0 275px;
         }
     }
     &__h3{
@@ -30,16 +33,18 @@
         margin-top: 6px;
         font-family: $font-title;
         font-size: 2.4rem;
-        margin-left: 15px;
+        margin: 0 15px 0 15px;
         @media all and (min-width: 768px){
             width: 690px;
             font-size: 2.6rem;
             line-height: 4.5rem;
-            margin: 0 0 0 39px;
+            margin: 0 39px 0 39px;
         }
         @media all and (min-width: 1280px){
+            width: 730px;
             font-size: 3.2em;
-            margin-left: 275px;
+            line-height: 4.5rem;
+            margin: 0 275px 0 275px;
         }
     }
     &__p{
@@ -63,7 +68,7 @@
     &__button{
         height: 45px;
         width: 76px;
-        margin: 26px 0 0 15px;
+        margin: 26px 229px 0 15px;
         border: 2px solid $button-color;
         border-radius:  22.5px;
         display: flex;
@@ -74,9 +79,9 @@
         }
         @media all and (min-width: 768px){
             width: 91px;
-            margin: 27px 0 60px 39px;
+            margin: 27px 638px 60px 39px;
         }
-        @media all and (min-width: 768px){
+        @media all and (min-width: 1280px){
             width: 160px;
             margin: 27px 845px 60px 275px;
         }
