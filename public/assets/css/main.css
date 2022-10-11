@@ -217,6 +217,10 @@
   grid-template-columns: 1fr;
   grid-template-rows: 108px 411px 105px;
   justify-items: center; }
+  @media all and (min-width: 768px) {
+    .reasons {
+      height: 397px;
+      grid-template-rows: 119px 173px 105px; } }
   .reasons__h3 {
     grid-row-start: 1/2;
     font-family: "Roboto Slab", serif;
@@ -251,24 +255,52 @@
     position: absolute;
     transform: translateY(601.5px); }
 
-.container__article {
-  grid-row-start: 2/3;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 30px 63px;
-  margin-bottom: 44px;
-  justify-items: center; }
-  .container__article--h4 {
-    grid-row-start: 1/2;
-    font-family: "Roboto Slab", serif;
-    font-size: 1.8rem;
-    text-align: center; }
-  .container__article--p {
-    width: 180px;
-    grid-row-start: 2/3;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.8rem;
-    text-align: center; }
+.container {
+  grid-row-start: 2/3; }
+  @media all and (min-width: 768px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 116px;
+      justify-items: center;
+      grid-gap: 27.7px; } }
+  @media all and (min-width: 768px) {
+    .container__firstArticle {
+      grid-column-start: 1/2; } }
+  @media all and (min-width: 768px) {
+    .container__secondtArticle {
+      grid-column-start: 2/3; } }
+  @media all and (min-width: 768px) {
+    .container__thirdArticle {
+      grid-column-start: 3/4; } }
+  .container__article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 63px;
+    margin-bottom: 44px;
+    justify-items: center; }
+    @media all and (min-width: 768px) {
+      .container__article {
+        grid-gap: 18px; } }
+    .container__article--h4 {
+      grid-row-start: 1/2;
+      font-family: "Roboto Slab", serif;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      text-align: center; }
+      @media all and (min-width: 768px) {
+        .container__article--h4 {
+          font-size: 2.4rem; } }
+    .container__article--p {
+      width: 212.3px;
+      grid-row-start: 2/3;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      text-align: center; }
+      @media all and (min-width: 768px) {
+        .container__article--p {
+          font-size: 2rem; } }
 
 .footer {
   height: 465px;
