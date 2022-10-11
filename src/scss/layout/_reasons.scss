@@ -4,7 +4,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 108px 411px 105px;
-    justify-items: center;
+    @media all and (max-width: 768px){
+        justify-items: center;
+    }
     @media all and (min-width: 768px){
         height: 397px;
         grid-template-rows: 119px 173px 105px;
@@ -16,24 +18,38 @@
         text-align: center;
         padding-top: 29px;
         margin-bottom: 49px;
+        @media all and (min-width: 768px){
+            font-size: 2.6rem;
+        }
+        @media all and (min-width: 1280px){
+            font-size: 3.2rem;
+        }
     }
     &__button{
-        grid-row-start: 3/4;
         width: 184px;
-        height: 45px;
-        background-color: $button-color;
-        border-radius: 22.5px;
+        grid-row-start: 3/4;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 45px;
+        background-color: $button-color;
+        border-radius: 22.5px;
+        @media all and (min-width: 768px){
+            width: 210px;
+            transform: translateX(36.33vw);
+        }
+        @media all and (min-width: 1280px){
+            width: 255px;
+        }
         &:hover{
             background-color: #8ccbea;
         }
         &--p{
+            text-align: center;
             color: $font-color;
             font-family: $font-main;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 2rem;
         }
     }
     &__arrow{
@@ -52,12 +68,15 @@
 .container{
     grid-row-start: 2/3;
     @media all and (min-width: 768px){
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 116px;
-    justify-items: center;
-    grid-gap: 27.7px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 116px;
+        justify-items: center;
+        margin: 0 40px 0 38px;
     }
+    @media all and (min-width: 1280px){
+        grid-gap: 26.7px;
+        }
     &__firstArticle{
         @media all and (min-width: 768px){
             grid-column-start: 1/2;
@@ -80,7 +99,7 @@
         margin-bottom: 44px;
         justify-items: center;
         @media all and (min-width: 768px){
-            grid-gap:18px;
+            grid-gap: 18px;
         }
         &--h4{
             grid-row-start: 1/2;
@@ -93,7 +112,7 @@
             }
         }
         &--p{
-            width: 212.3px;
+            width: 180px;
             grid-row-start: 2/3;
             font-family: $font-main;
             font-size: 1.8rem;
@@ -101,6 +120,11 @@
             text-align: center;
             @media all and (min-width: 768px){
                 font-size: 2rem;
+                width: 212.3px;
+            }
+            @media all and (min-width: 1280px){
+                font-size: 2rem;
+                width: 353.8px;
             }
         }
     }
