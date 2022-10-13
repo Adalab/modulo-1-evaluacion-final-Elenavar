@@ -213,14 +213,12 @@
       font-weight: 500; }
 
 .reasons {
+  position: relative;
   height: 624px;
   background-color: #eff9ff;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 108px 411px 105px; }
-  @media all and (max-width: 768px) {
-    .reasons {
-      justify-items: center; } }
   @media all and (min-width: 768px) {
     .reasons {
       height: 397px;
@@ -231,7 +229,8 @@
     font-size: 2.4rem;
     text-align: center;
     padding-top: 29px;
-    margin-bottom: 49px; }
+    margin-bottom: 49px;
+    width: 100vw; }
     @media all and (min-width: 768px) {
       .reasons__h3 {
         font-size: 2.6rem; } }
@@ -239,39 +238,49 @@
       .reasons__h3 {
         font-size: 3.2rem; } }
   .reasons__button {
-    width: 184px;
-    grid-row-start: 3/4;
+    width: 100vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 45px;
-    background-color: #f26002;
-    border-radius: 22.5px; }
-    @media all and (min-width: 768px) {
-      .reasons__button {
-        width: 210px;
-        transform: translateX(36.33vw); } }
-    @media all and (min-width: 1280px) {
-      .reasons__button {
-        width: 255px; } }
+    justify-content: center; }
     .reasons__button:hover {
       background-color: #8ccbea; }
     .reasons__button--p {
+      width: 184px;
+      grid-row-start: 3/4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 45px;
+      background-color: #f26002;
+      border-radius: 22.5px; }
+      @media all and (min-width: 768px) {
+        .reasons__button--p {
+          width: 210px; } }
+      @media all and (min-width: 1280px) {
+        .reasons__button--p {
+          width: 255px; } }
+    .reasons__button .link {
       text-align: center;
       color: #ffff;
       font-family: "Roboto", sans-serif;
       font-weight: 500;
       font-size: 2rem; }
   .reasons__arrow {
+    width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    background-color: #ffff;
-    border-radius: 22.5px;
     position: absolute;
     transform: translateY(601.5px); }
+    @media all and (min-width: 768px) {
+      .reasons__arrow {
+        transform: translateY(374.5px); } }
+    .reasons__arrow .link {
+      width: 45px;
+      height: 45px;
+      background-color: #ffff;
+      border-radius: 22.5px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
 
 .container {
   grid-row-start: 2/3; }
@@ -343,16 +352,6 @@
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center; } }
-  .footer__arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    background-color: #ffff;
-    border-radius: 22.5px;
-    position: absolute;
-    transform: translateY(-232.5px); }
   .footer__info {
     display: flex;
     flex-direction: column;
